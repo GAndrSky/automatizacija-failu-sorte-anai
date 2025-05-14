@@ -60,3 +60,16 @@ Skripts atbalsta arī specializētus failu tipus:
 2. Atver komandrindu un palaid `sorter.py`:
    ```bash
    python sorter.py
+3.Norādi ceļu uz mapi, kuru vēlies sakārtot.
+4.Faili tiks pārvietoti uz kategoriju mapēm.
+5.Pēc izpildes tiks izvadīts kopsavilkums.
+
+## Piemers:
+![image](https://github.com/user-attachments/assets/08076fed-85c5-4433-8f4d-54f06c26913c)
+
+## Iespējamie uzlabojumi:
+- Eksports uz .csv
+- Iespēja dzēst tukšās mapes
+- Lietotāja saskarne ar tkinter
+- Automatizēta palaišana ar uzdevumu plānotāju (cron vai Task Scheduler)
+
