@@ -4,64 +4,13 @@ Failu Sakārtošanas Automatizācijas Projekts
 Projekta uzdevums
 Automatizēt darbvirsmas vai lejupielāžu mapes saturu, pārskatot tajā esošos failus un pārvietojot tos uz atbilstošām kategoriju mapēm, tādējādi uzlabojot lietotāja darba vidi un failu pārskatāmību.
 
+Struktūra
+Projekts sastāv no diviem Python failiem:
+
+data_struckt.py – definē datu struktūras Fails un Failsisteme
+
+scraper.py – galvenais izpildes fails, kas sakārto failus pēc paplašinājuma
+
 Datu struktūras
-Fails
-class Fails:
-    nosaukums: str
-    cels: str
-    kategorija: str
-Failsisteme
-class Failsisteme:
-    kategorijas: Dict[str, List[Fails]]
-    def pievienot(self, fails: Fails): ...
-    def paradit_kopsavilkumu(self): ...
-Izmantotās Python bibliotēkas
-os — darbam ar failu sistēmu
 
-shutil — failu pārvietošanai
-
-dataclasses — strukturēto objektu definēšanai
-
-Lietošana
-Klonē vai lejupielādē projektu.
-
-Palaid skriptu scraper.py (kas ir sakārtošanas skripts).
-
-Norādi ceļu uz sakārtojamo mapi (piemēram, C:\Users\Lietotajs\Downloads).
-
-Programma pārvietos failus uz kategorijām atbilstošām mapēm.
-
-Pēc izpildes tiek izvadīts kopsavilkums par paveikto:
-
-DOKUMENTU: 3 faili
-  - fails1.pdf
-  - fails2.docx
-  - teksts.txt
-ATTĒLU: 2 faili
-  - bilde.jpg
-  - zime.png
-Kategorijas
-Faili tiek sadalīti šādās kategorijās:
-
-dokumentu: .pdf, .docx, .txt utt.
-
-attelu: .jpg, .png, .gif utt.
-
-video: .mp4, .avi utt.
-
-audio: .mp3, .wav utt.
-
-saspiestie: .zip, .rar utt.
-
-programmu: .exe, .msi utt.
-
-cits: ja nav sakritības ar kategorijām
-
-Iespējamie uzlabojumi
-Eksports uz .csv
-
-Iespēja dzēst tukšās mapes pēc sakārtošanas
-
-Lietotāja saskarne ar tkinter
-
-Automātiska izpilde ar Windows uzdevumu plānotāju vai cron Linux vidē
+![image](https://github.com/user-attachments/assets/07f096f4-40f0-4608-99b2-0b85a35fa71d)
