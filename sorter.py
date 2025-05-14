@@ -3,7 +3,7 @@ import shutil
 from data_struckt import Fails, Failsisteme
 
 KATEGORIJAS = {
-    "dokumentu": [".pdf", ".doc", ".docx", ".txt"],
+    "dokumentu": [".pdf", ".doc", ".docx", ".txt",],
     "attelu": [".jpg", ".jpeg", ".png", ".gif"],
     "video": [".mp4", ".avi", ".mov"],
     "audio": [".mp3", ".wav"],
